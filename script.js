@@ -132,3 +132,48 @@ const swiper = new Swiper(".swiper", {
         },
     }
 });
+
+document.querySelectorAll('.palette_container').forEach(container => {
+    let loopTimeline; // Variable to store the looping timeline
+
+    // Add mouseenter event for hover in
+    container.addEventListener('mouseenter', () => {
+        const circles = container.querySelectorAll('.circle_1, .circle_2, .circle_3, .circle_4');
+        
+        // Create a GSAP timeline for looping animation
+        loopTimeline = gsap.timeline({ repeat: -1 }); // Infinite loop
+
+        // Add staggered animation for circles in the timeline
+        loopTimeline.to(circles, {
+            y: 50,
+            opacity: 1, // Ensure full opacity
+            duration: 0.3, // Animation duration
+            ease: "power1.out", // Easing for smooth animation
+            stagger: 0.2, // Delay between each circle
+        }).to(circles, {
+            y: 0, // Reset scale to normal
+            duration: 0.3, // Animation duration for reset
+            ease: "power1.out", // Easing for smooth animation
+            stagger: 0.2, // Reverse stagger to animate reset in order
+        });
+    });
+
+    // Add mouseleave event for hover out
+    container.addEventListener('mouseleave', () => {
+        // Stop and kill the looping timeline on mouseleave
+        if (loopTimeline) {
+            loopTimeline.kill();
+            loopTimeline = null; // Reset the timeline variable
+        }
+
+        const circles = container.querySelectorAll('.circle_1, .circle_2, .circle_3, .circle_4');
+        
+        // Reset animation for all circles
+        gsap.to(circles, {
+            y: 0, // Reset scale to normal
+            opacity: 1, // Ensure full opacity
+            duration: 0.3, // Animation duration
+            ease: "power1.out", // Easing for smooth animation
+        });
+    });
+});

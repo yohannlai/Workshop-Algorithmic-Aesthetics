@@ -18,11 +18,13 @@ body{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    row-gap: 64px;
     height: 100%;
 }
 
 h1{
+    margin-top: 48px;
     text-align: center;
 }
 
@@ -46,6 +48,10 @@ h1{
     height: 400px;
     cursor: pointer;
     transition: all ease 0.5s;
+}
+
+.palette_container:hover{
+    transform: translateY(-20px);
 }
 
 .palette_container div{

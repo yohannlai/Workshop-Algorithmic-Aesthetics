@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Acidic';
+    src: url('./fonts/the-flame-proofer.regular.ttf');
+}
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -24,8 +29,17 @@ main{
 }
 
 h1{
+    font-family: "Acidic";
+    font-size: 3rem;
     margin-top: 48px;
     text-align: center;
+}
+
+h2{
+    font-family: "Acidic";
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 48px;
 }
 
 .swiper{
@@ -45,7 +59,7 @@ h1{
 .palette_container{
     position: relative;
     width: 400px;
-    height: 400px;
+    height: 450px;
     cursor: pointer;
     transition: all ease 0.5s;
 }
@@ -106,15 +120,10 @@ h1{
 }
 
 span{
-    font-size: 20px;
+    font-size: 1.2rem;
     -webkit-text-stroke: 4px black;
     paint-order: stroke fill;
     transform: translateY(-28px);
-}
-
-h2{
-    text-align: center;
-    margin-bottom: 48px;
 }
 
 /* Bubble CSS */

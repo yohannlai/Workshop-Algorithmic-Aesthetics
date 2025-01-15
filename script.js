@@ -145,15 +145,15 @@ document.querySelectorAll('.palette_container').forEach(container => {
 
         // Add staggered animation for circles in the timeline
         loopTimeline.to(circles, {
-            y: 50,
+            y: -50,
             opacity: 1, // Ensure full opacity
             duration: 0.3, // Animation duration
-            ease: "power1.out", // Easing for smooth animation
+            ease: "back.out(1.7)", // Easing for smooth animation
             stagger: 0.2, // Delay between each circle
         }).to(circles, {
             y: 0, // Reset scale to normal
             duration: 0.3, // Animation duration for reset
-            ease: "power1.out", // Easing for smooth animation
+            ease: "back.out(1.7)", // Easing for smooth animation
             stagger: 0.2, // Reverse stagger to animate reset in order
         });
     });
@@ -173,7 +173,7 @@ document.querySelectorAll('.palette_container').forEach(container => {
             y: 0, // Reset scale to normal
             opacity: 1, // Ensure full opacity
             duration: 0.3, // Animation duration
-            ease: "power1.out", // Easing for smooth animation
+            ease: "back.out(1.7)", // Easing for smooth animation
         });
     });
 });

@@ -1,6 +1,6 @@
 const colors = [
   {
-    palette_name: "Color Name",
+    palette_name: "Acidic Bloom",
     palette_group: "Chemical Acid",
     palette_group_color: "#FF0FFF",
     color_1: "#FF0FFF",
@@ -9,7 +9,7 @@ const colors = [
     color_4: "#EEFF00",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Neon Reactor",
     palette_group: "Chemical Acid",
     palette_group_color: "#FF0FFF",
     color_1: "#05FF50",
@@ -18,7 +18,7 @@ const colors = [
     color_4: "#FF0FFF",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Toxic Orchard",
     palette_group: "Chemical Fruit Acid",
     palette_group_color: "#05FF50",
     color_1: "#920045",
@@ -27,7 +27,7 @@ const colors = [
     color_4: "#EEFF00",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Exotic Zest",
     palette_group: "Chemical Fruit Acid",
     palette_group_color: "#05FF50",
     color_1: "#05FF50",
@@ -36,7 +36,7 @@ const colors = [
     color_4: "#FA3D7C",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Sour candy",
     palette_group: "Chemical Fruit Acid",
     palette_group_color: "#05FF50",
     color_1: "#FF0FFF",
@@ -45,7 +45,7 @@ const colors = [
     color_4: "#DA6167",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Plum",
     palette_group: "Fruit Acid",
     palette_group_color: "#FFA400",
     color_1: "#920045",
@@ -54,7 +54,7 @@ const colors = [
     color_4: "#E1F924",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Peach",
     palette_group: "Fruit Acid",
     palette_group_color: "#FFA400",
     color_1: "#DA6167",
@@ -63,7 +63,7 @@ const colors = [
     color_4: "#FFA400",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Grapefruit",
     palette_group: "Fruit Acid",
     palette_group_color: "#FFA400",
     color_1: "#E1F924",
@@ -72,7 +72,7 @@ const colors = [
     color_4: "#FFFF00",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Diabolo grenadine",
     palette_group: "Soda",
     palette_group_color: "#F0FAF3",
     color_1: "#C61C35",
@@ -81,7 +81,7 @@ const colors = [
     color_4: "#3C16F8",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "red fruit juice",
     palette_group: "Soda",
     palette_group_color: "#F0FAF3",
     color_1: "#DA6167",
@@ -90,7 +90,7 @@ const colors = [
     color_4: "#F0FAF3",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Schweppes",
     palette_group: "Soda",
     palette_group_color: "#F0FAF3",
     color_1: "#C61C35",
@@ -99,7 +99,7 @@ const colors = [
     color_4: "#EEFF00",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "sparkling water",
     palette_group: "Wet Acid",
     palette_group_color: "#85FF8F",
     color_1: "#00290D",
@@ -108,7 +108,7 @@ const colors = [
     color_4: "#F0FAF3",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Vinegar",
     palette_group: "Wet Acid",
     palette_group_color: "#85FF8F",
     color_1: "#D6FFE3",
@@ -117,7 +117,7 @@ const colors = [
     color_4: "#85FF8F",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Mojito",
     palette_group: "Wet Acid",
     palette_group_color: "#85FF8F",
     color_1: "#3C5936",
@@ -126,7 +126,7 @@ const colors = [
     color_4: "#00290D",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Hazardous Nectar",
     palette_group: "Wet Chemical Acid",
     palette_group_color: "#05FFCD",
     color_1: "#FA3D7C",
@@ -135,7 +135,7 @@ const colors = [
     color_4: "#00290D",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Chlorine",
     palette_group: "Wet Chemical Acid",
     palette_group_color: "#05FFCD",
     color_1: "#05FF50",
@@ -144,7 +144,7 @@ const colors = [
     color_4: "#05FFCD",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Poison",
     palette_group: "Wet Chemical Acid",
     palette_group_color: "#05FFCD",
     color_1: "#05FFCD",
@@ -153,7 +153,7 @@ const colors = [
     color_4: "#D6FFE3",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Wine",
     palette_group: "Wet Fruit Acid",
     palette_group_color: "#DA6167",
     color_1: "#DA6167",
@@ -162,7 +162,7 @@ const colors = [
     color_4: "#3C5936",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Lemonade",
     palette_group: "Wet Fruit Acid",
     palette_group_color: "#DA6167",
     color_1: "#F0FAF3",
@@ -171,7 +171,7 @@ const colors = [
     color_4: "#FFFF00",
   },
   {
-    palette_name: "Color Name",
+    palette_name: "Jack Rose",
     palette_group: "Wet Fruit Acid",
     palette_group_color: "#DA6167",
     color_1: "#DA6167",

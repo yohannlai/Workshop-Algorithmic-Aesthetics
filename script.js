@@ -158,7 +158,7 @@ document.querySelectorAll(".palette_container").forEach((container) => {
       y: 0, // Reset scale to normal
       opacity: 1, // Ensure full opacity
       duration: 0.1, // Animation duration
-      ease: "power2.inOut",
+      ease: "power2.in",
       stagger: 0.1, // Easing for smooth animation
     });
   });

@@ -32,8 +32,6 @@ a {
   color: white;
   text-decoration: none;
   transition: color ease 0.2s;
-  -webkit-text-stroke: 4px black;
-  paint-order: stroke fill;
 }
 
 a:hover {
@@ -76,16 +74,12 @@ h2 {
   font-family: "Acidic";
   font-size: 2rem;
   text-align: center;
-  -webkit-text-stroke: 4px black;
-  paint-order: stroke fill;
 }
 
 h3 {
   font-family: "Acidic";
   font-size: 1.5rem;
   text-align: center;
-  -webkit-text-stroke: 4px black;
-  paint-order: stroke fill;
 }
 
 .swiper {
@@ -119,7 +113,6 @@ h3 {
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  border: solid 4px black;
   transition: all ease 0.5s;
 }
 
@@ -164,10 +157,14 @@ h3 {
 }
 
 span {
-  font-size: 1.4rem;
-  -webkit-text-stroke: 4px black;
-  paint-order: stroke fill;
+  font-size: 1.5rem;
   transform: translateY(-28px);
+  opacity: 0;
+  transition: opacity ease 0.5s;
+}
+
+.selected_palette span {
+  opacity: 1;
 }
 
 p {

@@ -91,6 +91,7 @@ h3 {
 .swiper {
   width: 100vw;
   height: fit-content;
+  padding-bottom: 25px;
 }
 
 .swiper-slide {

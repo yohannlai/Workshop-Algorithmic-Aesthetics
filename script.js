@@ -1,69 +1,44 @@
 const colors = [
   {
-    palette_name: "wet fruit acid",
+    palette_name: "Color Name",
+    palette_group: "wet fruit acid",
+    palette_group_color: "#C61C35",
     color_1: "#BDFD00",
     color_2: "#C61C35",
     color_3: "#E1F929",
     color_4: "#FFFF00",
   },
   {
-    palette_name: "wet acid",
+    palette_name: "Color Name",
+    palette_group: "wet acid",
+    palette_group_color: "#05FFCD",
     color_1: "#19FF63",
     color_2: "#BDFD00",
     color_3: "#4AFF21",
     color_4: "#00FFA4",
   },
   {
-    palette_name: "wet chemical acid",
+    palette_name: "Color Name",
+    palette_group: "wet chemical acid",
+    palette_group_color: "#3C16F8",
     color_1: "#4AFF21",
     color_2: "#BDFD00",
     color_3: "#05FF50",
     color_4: "#00FFA4",
   },
   {
-    palette_name: "chemical acid",
+    palette_name: "Color Name",
+    palette_group: "chemical acid",
+    palette_group_color: "#BDFD00",
     color_1: "#05FFCD",
     color_2: "#05FF50",
     color_3: "#3C16F8",
     color_4: "#FF0FFF",
   },
   {
-    palette_name: "chemical fruit acid",
-    color_1: "#DA6167",
-    color_2: "#FFFF00",
-    color_3: "#920045",
-    color_4: "#FA3D7C",
-  },
-  {
-    palette_name: "wet fruit acid",
-    color_1: "#BDFD00",
-    color_2: "#C61C35",
-    color_3: "#E1F929",
-    color_4: "#FFFF00",
-  },
-  {
-    palette_name: "wet acid",
-    color_1: "#19FF63",
-    color_2: "#BDFD00",
-    color_3: "#4AFF21",
-    color_4: "#00FFA4",
-  },
-  {
-    palette_name: "wet chemical acid",
-    color_1: "#4AFF21",
-    color_2: "#BDFD00",
-    color_3: "#05FF50",
-    color_4: "#00FFA4",
-  },
-  {
-    palette_name: "chemical acid",
-    color_1: "#05FFCD",
-    color_2: "#05FF50",
-    color_3: "#3C16F8",
-    color_4: "#FF0FFF",
-  },
-  {
-    palette_name: "chemical fruit acid",
+    palette_name: "Color Name",
+    palette_group: "chemical fruit acid",
+    palette_group_color: "#920045",
     color_1: "#DA6167",
     color_2: "#FFFF00",
     color_3: "#920045",
@@ -78,6 +53,9 @@ palettesContainer.innerHTML = colors
     (color) => `
     <div class="swiper-slide">
         <h2>${color.palette_name.toUpperCase()}</h2>
+        <h3 style="color: ${
+          color.palette_group_color
+        }">${color.palette_group.toUpperCase()}</h3>
         <div class="palette_container">
             <div class="circle_1" style="background-color: ${color.color_1};">
                 <span style="color: ${color.color_1}">${color.color_1}</span>
@@ -151,15 +129,15 @@ document.querySelectorAll(".palette_container").forEach((container) => {
       .to(circles, {
         y: -50,
         opacity: 1, // Ensure full opacity
-        duration: 0.3, // Animation duration
-        ease: "power2.inOut", // Easing for smooth animation
-        stagger: 0.2, // Delay between each circle
+        duration: 0.5, // Animation duration
+        ease: "power2.in", // Easing for smooth animation
+        stagger: 0.1, // Delay between each circle
       })
       .to(circles, {
         y: 0, // Reset scale to normal
-        duration: 0.3, // Animation duration for reset
+        duration: 0.1, // Animation duration for reset
         ease: "power2.inOut", // Easing for smooth animation
-        stagger: 0.2, // Reverse stagger to animate reset in order
+        stagger: 0.1, // Reverse stagger to animate reset in order
       });
   });
 
@@ -179,8 +157,9 @@ document.querySelectorAll(".palette_container").forEach((container) => {
     gsap.to(circles, {
       y: 0, // Reset scale to normal
       opacity: 1, // Ensure full opacity
-      duration: 0.3, // Animation duration
-      ease: "back.out(1.7)", // Easing for smooth animation
+      duration: 0.1, // Animation duration
+      ease: "power2.inOut",
+      stagger: 0.1, // Easing for smooth animation
     });
   });
 });

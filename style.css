@@ -1,231 +1,283 @@
 @font-face {
-    font-family: 'Acidic';
-    src: url('./fonts/the-flame-proofer.regular.ttf');
+  font-family: "Acidic";
+  src: url("./fonts/the-flame-proofer.regular.ttf");
 }
 
-*,*::before,*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(0deg, rgb(5, 61, 50) 0%, rgb(10, 4, 42) 22%, rgba(0,0,0,1) 100%);
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    width: 100vw;
-    height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    0deg,
+    rgb(5, 61, 50) 0%,
+    rgb(10, 4, 42) 22%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    row-gap: 64px;
-    height: 100%;
+a {
+  font-family: "Acidic";
+  color: white;
+  text-decoration: none;
+  transition: color ease 0.2s;
 }
 
-h1{
-    font-family: "Acidic";
-    font-size: 3rem;
-    margin-top: 48px;
-    text-align: center;
+a:hover {
+  color: #4aff21;
 }
 
-h2{
-    font-family: "Acidic";
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 48px;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 64px;
+  height: 100%;
 }
 
-.swiper{
-    width: 100vw;
-    height: fit-content;
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  z-index: 1;
+  padding: 0 32px;
+}
+
+nav div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav div a {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-family: "Acidic";
+  font-size: 3rem;
+  text-align: center;
+  grid-column: 2 / 3;
+}
+
+h2 {
+  font-family: "Acidic";
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.swiper {
+  width: 100vw;
+  height: fit-content;
 }
 
 .swiper-slide {
-    width: fit-content !important;
+  width: fit-content !important;
 }
 
-#color_palettes{
-    display: flex;
-    column-gap: 80px;
+#color_palettes {
+  display: flex;
+  column-gap: 80px;
 }
 
-.palette_container{
-    position: relative;
-    width: 400px;
-    height: 450px;
-    cursor: pointer;
-    transition: all ease 0.5s;
+.palette_container {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  cursor: pointer;
+  transition: all ease 0.5s;
 }
 
-.palette_container:hover{
-    transform: translateY(-20px);
+.palette_container:hover {
+  transform: translateY(-20px);
 }
 
-.palette_container div{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    border: solid 4px black;
-    transition: all ease 0.5s;
+.palette_container div {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: solid 4px black;
+  transition: all ease 0.5s;
 }
 
-.selected_palette{
-    width: 1000px;
+.selected_palette {
+  width: 1000px;
 }
 
-.selected_palette .circle_1{
-    right: 600px;
+.selected_palette .circle_1 {
+  right: 600px;
 }
 
-.selected_palette .circle_2{
-    right: 300px;
+.selected_palette .circle_2 {
+  right: 300px;
 }
 
-.selected_palette .circle_3{
-    right: 100px;
+.selected_palette .circle_3 {
+  right: 100px;
 }
 
-.circle_1{
-    width: 400px;
-    height: 400px;
-    background-color: aquamarine;
+.circle_1 {
+  width: 400px;
+  height: 400px;
+  background-color: aquamarine;
 }
 
-.circle_2{
-    width: 300px;
-    height: 300px;
-    background-color: rgb(255, 210, 127);
+.circle_2 {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 210, 127);
 }
 
-.circle_3{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(149, 0, 255);
+.circle_3 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(149, 0, 255);
 }
 
-.circle_4{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(101, 49, 49);
+.circle_4 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(101, 49, 49);
 }
 
-span{
-    font-size: 1.2rem;
-    -webkit-text-stroke: 4px black;
-    paint-order: stroke fill;
-    transform: translateY(-28px);
+span {
+  font-size: 1.4rem;
+  -webkit-text-stroke: 4px black;
+  paint-order: stroke fill;
+  transform: translateY(-28px);
+}
+
+p {
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Bubble CSS */
 
-.bubbles{
-    position:absolute;
-    width:100%;
-    height: 100%;
-    z-index:0;
-    overflow:hidden;
-    top:0;
-    left:0;
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
-  .bubble{
-    position: absolute;
-    bottom:-100px;
-    width:40px;
-    height: 40px;
-    background:#4AFF21;
-    border-radius:50%;
-    opacity:0.5;
-    animation: rise 10s infinite ease-in;
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: #4aff21;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: rise 10s infinite ease-in;
 }
-  .bubble:nth-child(1){
-    width:40px;
-    height:40px;
-    left:10%;
-    animation-duration:8s;
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
 }
-  .bubble:nth-child(2){
-    width:20px;
-    height:20px;
-    left:20%;
-    animation-duration:5s;
-    animation-delay:1s;
+.bubble:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
 }
-  .bubble:nth-child(3){
-    width:50px;
-    height:50px;
-    left:35%;
-    animation-duration:7s;
-    animation-delay:2s;
+.bubble:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 7s;
+  animation-delay: 2s;
 }
-  .bubble:nth-child(4){
-    width:80px;
-    height:80px;
-    left:50%;
-    animation-duration:11s;
-    animation-delay:0s;
+.bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 11s;
+  animation-delay: 0s;
 }
-  .bubble:nth-child(5){
-    width:35px;
-    height:35px;
-    left:55%;
-    animation-duration:6s;
-    animation-delay:1s;
+.bubble:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+.bubble:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(8) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(9) {
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(10) {
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+@keyframes rise {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
   }
-  .bubble:nth-child(6){
-    width:45px;
-    height:45px;
-    left:65%;
-    animation-duration:8s;
-    animation-delay:3s;
+  50% {
+    transform: translate(100px);
   }
-  .bubble:nth-child(7){
-    width:90px;
-    height:90px;
-    left:70%;
-    animation-duration:12s;
-    animation-delay:2s;
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
   }
-  .bubble:nth-child(8){
-    width:25px;
-    height:25px;
-    left:80%;
-    animation-duration:6s;
-    animation-delay:2s;
+}
+
+@media screen and (min-width: 2000px) {
+  h1 {
+    font-size: 5rem;
   }
-  .bubble:nth-child(9){
-    width:15px;
-    height:15px;
-    left:70%;
-    animation-duration:5s;
-    animation-delay:1s;
+
+  h2 {
+    font-size: 3rem;
   }
-  .bubble:nth-child(10){
-    width:90px;
-    height:90px;
-    left:25%;
-    animation-duration:10s;
-    animation-delay:4s;
-  }
-  @keyframes rise{
-    0%{
-      bottom:-100px;
-      transform:translateX(0);
-    }
-    50%{
-      transform:translate(100px);
-    }
-    100%{
-      bottom:1080px;
-      transform:translateX(-200px);
-    }
-  }
+}

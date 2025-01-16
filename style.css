@@ -44,7 +44,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 64px;
+  /* row-gap: 64px; */
   height: 100%;
 }
 
@@ -95,6 +95,7 @@ h3 {
 
 .swiper-slide {
   width: fit-content !important;
+  padding: 50px 0;
 }
 
 #color_palettes {

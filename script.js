@@ -72,7 +72,7 @@ const colors = [
     color_4: "#FFFF00",
   },
   {
-    palette_name: "Diabolo grenadine",
+    palette_name: "Diabolo",
     palette_group: "Soda",
     palette_group_color: "#F0FAF3",
     color_1: "#C61C35",

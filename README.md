@@ -1,1 +1,1 @@
-# Workshop-Esthetique-Algo
+# Workshop-Algorithmic-Aesthetics
